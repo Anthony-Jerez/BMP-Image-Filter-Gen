@@ -11,17 +11,8 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         // Dor each column of pixels
         for (int c = 0; c < width; c++)
         {
-            // Calculate the average of the current pixel's colors
-            temp = (image[r][c].rgbtBlue + image[r][c].rgbtGreen + image[r][c].rgbtRed) / 3.0;
-            // If the average needs to be rounded up
-            if (temp - 0.5 >= (BYTE) temp)
-            {
-                temp = (BYTE) temp + 1; // round it up to its nearest integer
-            }
-            else
-            {
-                temp = (BYTE) temp; // round down to its nearest integer
-            }
+            // Calculate the average of the current pixel's colors.
+            temp = round((image[r][c].rgbtBlue + image[r][c].rgbtGreen + image[r][c].rgbtRed) / 3.0);
             // Update the current pixel's values with its new values
             image[r][c].rgbtBlue = temp;
             image[r][c].rgbtGreen = temp;
