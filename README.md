@@ -31,19 +31,24 @@ To apply edge detection filter:
 
 ## Example
 
-Original Image:
+#### Original Image:
+
 ![Original](README_assets/tower.bmp)
 
-Grayscale Filter:
+#### Grayscale Filter:
+
 ![Grayscale-Filter](README_assets/tower-grayscale.bmp)
 
-Blur Filter:
+#### Blur Filter:
+
 ![Blur-Filter](README_assets/tower-blur.bmp)
 
-Edge Detection Filter:
+#### Edge Detection Filter:
+
 ![Edges-Filter](README_assets/tower-edges.bmp)
 
-Reflection Filter:
+#### Reflection Filter:
+
 ![Reflection-Filter](README_assets/tower-reflection.bmp)
 
 
